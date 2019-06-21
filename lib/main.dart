@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
         canvasColor: Colors.white,
 //
       ),
-      home: PlantPage(title: 'Plant App'),
+      home: PlantPage(title: 'PlantMonitor'),
     );
   }
 }
@@ -28,19 +28,24 @@ class PlantPage extends StatefulWidget {
 }
 
 class _PlantPageState extends State<PlantPage> {
-
+  var plants = ['betty', 'sallly', 'marvin'];
   @override
   Widget build(BuildContext context) {
-
     return Scaffold(
       appBar: AppBar(
-        title: Text(widget.title,style:TextStyle(color: Colors.white)),
+        title: Text(widget.title, style: TextStyle(color: Colors.white)),
         backgroundColor: Colors.blueGrey[600],
       ),
-      drawer: Drawer(child: ListView(children: <Widget>[
-        ListTile(title: Text("Add")),
-        ListTile(title: Text("Add"))
-      ],)),
+      drawer: Drawer(
+          child: ListView.separated(
+              itemCount: plants.length,
+              separatorBuilder: (context, position) => Divider(),
+              itemBuilder: (context, position) {
+                return ListTile(
+                    title: Text(plants[position]),
+                    onTap: () => Navigator.pop(context));
+              })),
+      body: Center(child:Container(width:MediaQuery.of(context).size.width*.4,decoration: BoxDecoration(image: DecorationImage(image: AssetImage('assets/tree_planting.v2.png',),fit: BoxFit.scaleDown)),)),
     );
   }
 }
