@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "710971759704",
+    "firebase_url": "https://plant-app-4603b.firebaseio.com",
+    "project_id": "plant-app-4603b",
+    "storage_bucket": "plant-app-4603b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:710971759704:android:a3650c2711e6d6af",
+        "android_client_info": {
+          "package_name": "benjaminmartin508.plant_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "710971759704-viq91b853c8d5dguo8gsuiit704gnrlf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCfpeftvsa53OBaKh8r3iUYT5iOyppjkok"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "710971759704-viq91b853c8d5dguo8gsuiit704gnrlf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
