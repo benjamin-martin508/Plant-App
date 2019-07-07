@@ -71,8 +71,14 @@ class _PlantPageState extends State<PlantPage> {
 
   buildnamedplant() {
     return Center(
-        child: Container(
-            width: MediaQuery.of(context).size.width * .4,
-            child: Text(widget.plantname)));
+        child: Column(mainAxisAlignment: MainAxisAlignment.center,
+    children: <Widget>[
+      CircleAvatar(radius: 70, backgroundColor: Colors.amber,backgroundImage:AssetImage(
+            'assets/tree_planting.v2.png'),),
+      Text(widget.plantname),
+      Text('Pothos "Apepremnum Aureum"')
+        ]
+    )
+    );
   }
 }
